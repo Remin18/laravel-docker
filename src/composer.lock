@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "d14169b3665d3c7ad31f79ce6a63f5d4",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,60 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "colopl/laravel-tidb",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colopl/laravel-tidb.git",
+                "reference": "b50630df86f91b3e8ece52e4c83b47ba73f5d219"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colopl/laravel-tidb/zipball/b50630df86f91b3e8ece52e4c83b47ba73f5d219",
+                "reference": "b50630df86f91b3e8ece52e4c83b47ba73f5d219",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "laravel/framework": "~10|~11",
+                "php": ">=8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~8|~9",
+                "phpunit/phpunit": "~11"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Colopl\\TiDB\\TiDBServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Colopl\\TiDB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Takayasu Oyama",
+                    "email": "t-oyama@colopl.co.jp"
+                }
+            ],
+            "description": "Laravel database driver for PingCAP TiDB",
+            "support": {
+                "issues": "https://github.com/colopl/laravel-tidb/issues",
+                "source": "https://github.com/colopl/laravel-tidb/tree/v3.1.0"
+            },
+            "time": "2024-03-19T01:29:59+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -5862,6 +5916,66 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "438424c11583576bbf3897dda505d2565e53c9bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/438424c11583576bbf3897dda505d2565e53c9bd",
+                "reference": "438424c11583576bbf3897dda505d2565e53c9bd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0",
+                "illuminate/filesystem": "^11.0",
+                "illuminate/support": "^11.0",
+                "illuminate/validation": "^11.0",
+                "php": "^8.2.0",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2024-06-06T14:18:45+00:00"
         },
         {
             "name": "laravel/pint",
