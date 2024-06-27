@@ -13,29 +13,59 @@
    cd laravel-docker
    ```
 
-2. Dockerコンテナを起動する
+1. Dockerコンテナを起動する
 
    ```bash
    docker-compose up -d
    ```
 
-3. PHPコンテナに入る
+1. PHPコンテナに入る
 
    ```bash
    docker-compose exec php bash
    ```
 
-4. ファイルの所有者と権限を設定する
+1. .envファイルを作成
+
+   ```bash
+   cp .env.example .env
+   ```
+
+1. ファイルの所有者と権限を設定する
 
    ```bash
    chown -R www-data:www-data /var/www
    chmod -R 755 /var/www/storage
    ```
 
-5. データベースマイグレーションを実行する
+1. composerをインストール
+
+   ```bash
+   composer install
+   ```
+
+1. プロジェクトの依存関係をインストール
+
+   ```bash
+   npm install
+   ```
+
+1. APPキーを作成
+
+   ```bash
+   php artisan key:generate
+   ```
+
+1. データベースマイグレーションを実行する
 
    ```bash
    php artisan migrate
+   ```
+
+1. フロントエンドを起動
+
+   ```bash
+   npm run dev
    ```
 
 ## 注意事項
